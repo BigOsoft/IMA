@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='fonts/icomoon/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <title>IMA - Dashboard</title>
+</head>
+
+<style>
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        font-size: 14px;
+        color: #666666;
+        font-family: "Open Sans";
+    }
+
+    .card-custom {
+        overflow: hidden;
+        min-height: 450px;
+        box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    }
+
+    .card-custom-img {
+        height: 200px;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-color: inherit;
+    }
+
+    /* First border-left-width setting is a fallback */
+    .card-custom-img::after {
+        position: absolute;
+        content: '';
+        top: 161px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top-width: 40px;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        border-left-width: 545px;
+        border-left-width: calc(575px - 5vw);
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: inherit;
+    }
+
+    .card-custom-avatar img {
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+        position: absolute;
+        top: 100px;
+        left: 1.25rem;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    {% include "navbar.html" %}
+    <div class="container">
+        <div class="row pt-5 m-auto">
+            <div class="col-md-6 col-lg-4 pb-3">
+
+                <!-- Copy the content below until next comment -->
+                <div class="card card-custom bg-white border-white border-0" style="height: 450px">
+                    <div class="card-custom-img"
+                        style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                    </div>
+                    <div class="card-custom-avatar">
+                        <img class="img-fluid" src="{{ url_for('static',filename='images/ribbon.jpg') }}"
+                            alt="Avatar" />
+                    </div>
+                    <div class="card-body" style="overflow-y: auto">
+                        <h4 class="card-title">Breast Cancer Detection</h4>
+                        <p class="card-text">Using deep learning methods to predict the severity of breast cancer.
+                            Please make sure you upload the original mammogram file and select the correct view for high
+                            accuracy.
+                        <p>
+                        <p class="card-text">Please note: It can take up to 5 minutes to obtain the result depending on
+                            the
+                            processing power of the Neural Processing Units and queue size.</p>
+                    </div>
+                    <div class="card-footer" style="background: inherit; border-color: inherit;">
+                        <a href="/bc" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-outline-primary">More info</a>
+                    </div>
+                </div>
+                <!-- Copy until here -->
+
+            </div>
+            <div class="col-md-6 col-lg-4 pb-3">
+
+                <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
+                <div class="card card-custom bg-white border-white border-0" style="height: 450px">
+                    <div class="card-custom-img"
+                        style="background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);">
+                    </div>
+                    <div class="card-custom-avatar">
+                        <img class="img-fluid" src="{{ url_for('static',filename='images/tuberculosis.jpg') }}"
+                            alt="Avatar" />
+                    </div>
+                    <div class="card-body" style="overflow-y: auto">
+                        <h4 class="card-title">Tuberculosis Detection</h4>
+                        <p class="card-text">Tuberculosis detection employs deep learning methods to detect tuberculosis
+                            on a valid chest x-ray. Make sure you upload a high quality chest x-ray image. Using an
+                            original file will yield more accuracy.</p>
+                    </div>
+                    <div class="card-footer" style="background: inherit; border-color: inherit;">
+                        <a href="/tb" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-outline-primary">More info</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+</body>
+
+</html>
