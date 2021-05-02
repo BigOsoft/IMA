@@ -1,1 +1,47 @@
-<h1>HEY</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Stylish Portfolio - Start Bootstrap Template</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Simple line icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <a class="menu-toggle rounded" href="/login"><i class="fas fa-arrow-right"></i></a>
+    <!-- Header-->
+    <header class="masthead d-flex"
+        style="background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('{{ url_for('static',filename='images/main-bg.jpg') }}');">
+        <div class="container text-center my-auto" style='color: #ffffff;'>
+            <h1 class="mb-1">IMA</h1>
+            <h3 class="mb-5"><em>Intelligent Medical Assistant</em></h3>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="/login">Get Started</a>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- Custom scripts for this template-->
+    <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
