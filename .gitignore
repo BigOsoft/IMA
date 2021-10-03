@@ -124,3 +124,6 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+#sample data folders
+sample_single_output/
